@@ -10,9 +10,9 @@ This project has been tested to run using Python v3.8.10. Please install compati
 This projects are built on top of python virtual environtment (venv) to isolate package/libraries installation, there will be slight changes to project folder on Windows and Linux/Mac OS
 
 ## If you are using Windows
-Please use mfcc-windows folder. Before running the server, change the current working directory to mfcc-windows folder and run ```activate.bat``` to activate virtual environment, initialize dependencies installation using pip and run server.py (if you skip this, there will be an 'module not found error' message). After several seconds, the server will run on http://127.0.0.1:5000
+Please use mfcc-windows folder. Before running the server, change the current working directory to mfcc-windows folder and run ```start.bat``` to activate virtual environment, initialize dependencies installation using pip and run server.py (if you skip this, there will be an 'module not found error' message). After several seconds, the server will run on http://127.0.0.1:5000
 ```
-\mfcc_windows>activate
+\mfcc_windows>start
 
  * Serving Flask app 'server' (lazy loading)
  * Environment: production
@@ -24,10 +24,10 @@ Please use mfcc-windows folder. Before running the server, change the current wo
 ```
 
 ## If you are using Linux/MacOS
-Please use mfcc-windows folder. Before running the server, change the current working directory to mfcc_linux folder and run activate.sh to activate virtual environment, initialize dependencies installation using pip and run ```server.py``` (if you skip this, there will be an 'module not found error' message). After several seconds, the server will run on http://127.0.0.1:5000
+Please use mfcc-windows folder. Before running the server, change the current working directory to mfcc_linux folder and run ```start.sh``` to activate virtual environment, initialize dependencies installation using pip and run ```server.py``` (if you skip this, there will be an 'module not found error' message). After several seconds, the server will run on http://127.0.0.1:5000
 
 ```
-~/mfcc_linux$ source activate
+~/mfcc_linux$ source start
 
  * Serving Flask app 'server' (lazy loading)
  * Environment: production
@@ -38,7 +38,7 @@ Please use mfcc-windows folder. Before running the server, change the current wo
 127.0.0.1 - - [21/Apr/2022 19:57:00] "POST / HTTP/1.1" 200 -
 ```
 ## Dependencies
-Required libraries included in requirements.txt, automatically installed when running ```activate.bat``` / ```activate.sh script```
+Required libraries included in requirements.txt, automatically installed when running ```start.bat``` / ```start.sh script```
 - scipy == 1.8.0
 - flask == 2.1.1
 - librosa == 0.9.1
